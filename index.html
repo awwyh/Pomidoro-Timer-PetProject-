@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="titlee">Помодоро Таймер</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <button class="btn-theme buttonn" id="theme-toggle">🌙</button>
+      <button class="btn-lang buttonn" id="lang-toggle">RU</button>
+    </div>
+    <!-- Добавляем элемент для звука -->
+    <audio id="finishSound" src="assets/finishSound.mp3" preload="auto"></audio>
+
+    <div class="text-center">
+      <div id="timerStatus"><h1>Таймер Помодоро ⏱️</h1></div>
+      <!-- Новый элемент для статуса таймера -->
+      <div id="timer" class="timer">25:00</div>
+      <button id="plusBtn" class="btnAn btn-add">Добавить 5 минут</button>
+      <button id="minusBtn" class="btnAn btn-remove">Убрать 5 минут</button>
+      <div class="mt-4">
+        <button id="startBtn" class="btn btn-start">Начать</button>
+        <button id="stopBtn" class="btn btn-reset" disabled>Сброс</button>
+      </div>
+
+      <div class="tasks">
+        <h1 id="tasks-title">Задачи на сессию</h1>
+        <input type="text" placeholder="Введите цель" id="title" />
+        <button class="btn btn-add" id="create">Добавить</button>
+
+        <ul class="list" id="list"></ul>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

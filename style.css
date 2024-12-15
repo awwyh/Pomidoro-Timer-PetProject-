@@ -1,0 +1,266 @@
+:root{
+    --color-w: #ededed;
+    --color-b: #151515;
+    --color-b1: #202020;
+    --color-wh: #ffffff;
+    --color-r: #ff6060;
+    --color-g: #6c757d;
+    --color-gr: #28a745;
+}
+
+body {
+  background-color: var(--color-b);
+  color: var(--color-w);
+  max-width: fit-content;
+  margin-left: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  font-family: Rubik, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+
+.text-center {
+    text-align: center;
+  }
+
+.btn-start {
+  background-color: #28a745;
+}
+.btn-reset {
+  background-color: var(--color-r);
+}
+.btn-add {
+    background-color: var(--color-r);
+  }
+
+.btn{
+margin-top: 10px;
+color: var(--color-wh);
+
+border: none;
+border-radius: 10px;
+
+width: 120px;
+height: 38px;
+cursor: pointer;
+}
+
+.btnAn{
+color: var(--color-wh);
+border: none;
+background-color: var(--color-r);
+border-radius: 10px;
+width: 150px;
+height: 35px;
+cursor: pointer;
+}
+
+button:disabled {
+    background-color: var(--color-g);
+    cursor: not-allowed;
+  }
+
+.timer{
+    max-width: fit-content;
+    margin-left: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.btnc{
+    margin-top: 10px;
+    color: var(--color-w);
+    
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+
+    }
+
+.btn-success{
+    background-color: var(--color-gr);
+}
+.btn-danger{
+    background-color: var(--color-r);
+}
+
+.tasks {
+    margin-top: 30px;
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--color-b1);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  input {
+    
+    width:250px  ;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border:none;
+    
+    background-color: var(--color-b);
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .list-item span {
+    flex: 1;
+    word-wrap: break-word; 
+    max-width: 100%; 
+  }
+  
+  .list-item .btnc {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-item .btn-success {
+    background-color: var(--color-success);
+    color: white;
+  }
+  
+  .list-item .btn-success:hover {
+    background-color: var(--color-gr);
+  }
+  
+  .list-item .btn-danger {
+    background-color: var(--color-danger);
+    color: white;
+  }
+  
+  .list-item .btn-danger:hover {
+    background-color: var(--color-r);
+  }
+  
+  .text-decoration-line-through {
+    text-decoration: line-through;
+    color: var(--color-g);
+  }
+  
+  .list-item .btnc:active {
+    transform: scale(0.95);
+  }
+  
+  .list-item .btnc:focus {
+    outline: none;
+  }
+  
+  input:focus {
+    border:none;
+    outline: none;
+  }
+
+  h2{
+    margin-bottom: -5px;
+    font-size: 35px;
+
+  }
+
+  .header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.buttonn {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--color-success);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.buttonn:hover {
+  background-color: var(--color-b1);
+}
+button{
+    transition: 0.9s ease;
+}
+button:hover {
+    scale: 1.05;
+  }
+
+button:focus {
+  outline: none;
+}
+
+body.dark-theme {
+  background-color: #151515;
+  color: #ededed;
+}
+
+
+body.dark-theme {
+    background-color: var(--color-w); /* Белый фон */
+    color: #333333; /* Темный текст */
+}
+
+body.dark-theme .tasks {
+    background-color: #F9F9F9; /* Светлый фон для задач */
+}
+body.dark-theme .tasks {color: var(--color-b);}
+
+
+body.dark-theme .list-item {
+    background-color: #FFFFFF; /* Белый фон для задач */
+}
+
+body.dark-theme .list-item .btn-success {
+    background-color: var(--color-success);
+    color: black;
+  }
+
+  body.dark-theme .list-item .btn-success:hover {
+    background-color: var(--color-gr);
+  }
+
+  body.dark-theme .list-item .btn-danger {
+    background-color: var(--color-danger);
+    color: var(--color-b);
+  }
+  
+  body.dark-theme .list-item .btn-danger:hover {
+    background-color: var(--color-r);
+  }
+
+  .timerStatus{
+    font-size: 45px;
+    font-weight: 700;
+  }
